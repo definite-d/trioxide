@@ -11,6 +11,7 @@
 	let marqueeEl: HTMLElement;
 	let stop = false;
 	onMount(() => {
+		let isRtl: boolean = getComputedStyle(marqueeEl).direction === 'rtl';
 		let state: [HTMLElement, number, number][];
 		const init = () => {
 			const pr = marqueeEl.getBoundingClientRect();
@@ -21,7 +22,7 @@
 				const rects = children.map((e) => e.getBoundingClientRect());
 				let i = 0;
 				const space = marqueeEl.scrollWidth - marqueeEl.getBoundingClientRect().width;
-				let gap = rects[1]?.x - rects[0]?.x - rects[0]?.width || 0;
+				let gap = rects[isRtl ? 0 : 1]?.x - rects[isRtl ? 1 : 0]?.right || 0;
 				for (const e of children) {
 					const rect = rects[i];
 					const baseMin = -Math.max(space + gap, rect.width) - (rect.x - pr.x);
