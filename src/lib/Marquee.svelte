@@ -50,6 +50,8 @@
 		resizeObserver.observe(marqueeEl);
 
 		const update = (now: number) => {
+			// need to check if this is too expensive
+			// isRtl = window.getComputedStyle(marqueeEl).direction === 'rtl';
 			if (!lastT) lastT = now;
 			const dt = (now - lastT) / 1000;
 			lastT = now;
