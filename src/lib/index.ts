@@ -1,5 +1,6 @@
-export * from "./ContextMenu.svelte";
-export { default as ContextMenu } from "./ContextMenu.svelte";
+export * from './ContextMenu.svelte';
+export { default as ContextMenu } from './ContextMenu.svelte';
+
 export * from './Docker.svelte';
 export { default as Docker } from './Docker.svelte';
 
@@ -21,5 +22,5 @@ export { default as Flow } from './Flow.svelte';
 export * from './Range2D.svelte';
 export { default as Range2D } from './Range2D.svelte';
 
-
-export { default as Marquee } from './Marquee.svelte'
+export * from './Marquee.svelte';
+export { default as Marquee } from './Marquee.svelte';
