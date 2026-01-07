@@ -75,7 +75,7 @@ A smooth, performant marquee component that scrolls its children horizontally at
 ## Props
 
 - `speed`: number, default `200`, the speed in pixels per second at which the content scrolls.
-- `direction`: either `left` or `right`, default `right`, the direction the content scrolls in.
+- `direction`: `auto`, `left` or `right`, default `auto` (moves leftwards on LTR layouts and rightwards on RTL layouts); the direction the content scrolls in.
 - `children`: snippet that renders the content to be scrolled.
 - Remaining `HTMLDivElement` props apply to the outer container (e.g., `class`, `style`, `aria-*`).
 
