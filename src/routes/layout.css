@@ -209,6 +209,7 @@ html {
 @theme inline {
 	--color-*: initial;
 	--color-black: #000;
+	--color-white: #fff;
 
 	--color-orange-1: var(--orange-1);
 	--color-orange-2: var(--orange-2);
