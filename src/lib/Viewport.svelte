@@ -305,6 +305,7 @@
 			patternColor = patternColor.replace('var(', '').replace(')', '');
 			watchColor();
 		} else {
+			pColor = patternColor;
 			cancelAnimationFrame(timeout);
 		}
 		return () => {
